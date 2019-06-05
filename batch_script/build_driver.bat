@@ -1,0 +1,1 @@
+C:\Windows\Microsoft.NET\Framework\v4.0.30319\MSBuild.exe /t:clean /t:build C:\WinDDK\7600.16385.1\src\CR0HookTest\CR0HookTest.sln /p:Configuration="Win7 Debug" /p:platform=Win32

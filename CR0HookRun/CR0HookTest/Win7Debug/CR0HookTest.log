@@ -1,0 +1,28 @@
+﻿Build started 7/9/2017 12:00:15 PM.
+Project "C:\Users\test\windows_monitor\CR0HookRun\CR0HookTest\CR0HookTest.vcxproj" on node 2 (Build target(s)).
+StampInf:
+  C:\Program Files\Windows Kits\8.0\bin\x86\stampinf.exe -d "*" -a "x86" -v "*" -k "1.11" -u "1.11.0" -f Win7Debug\CR0HookTest.inf 
+  Stamping Win7Debug\CR0HookTest.inf [Version] section with DriverVer=07/09/2017,12.0.15.815
+ClCompile:
+  C:\Program Files\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /IWin7Debug\ /Zi /nologo /W0 /WX /Od /Oi /Oy- /D _X86_=1 /D i386=1 /D STD_CALL /D DEPRECATE_DDK_FUNCTIONS=1 /D MSC_NOOPT /D WIN32_LEAN_AND_MEAN=1 /D _WIN32_WINNT=0x0601 /D WINVER=0x0601 /D WINNT=1 /D NTDDI_VERSION=0x06010000 /D DBG=1 /D KMDF_VERSION_MAJOR=1 /D KMDF_VERSION_MINOR=11 /GF /Gm- /Zp8 /GS /Gy /fp:precise /hotpatch /Zc:wchar_t- /Zc:forScope- /GR- /Fo"Win7Debug\\" /Fd"Win7Debug\vc110.pdb" /Gz /wd4748 /wd4603 /wd4627 /wd4986 /wd4987 /wd4996 /FI"C:\Program Files\Windows Kits\8.0\Include\Shared\warning.h" /analyze- /errorReport:prompt /kernel -cbstring /d1import_no_registry /d2AllowCompatibleILVersions /d2Zi+ driver.c hook.c readIrp.c util.c
+  driver.c
+  hook.c
+  readIrp.c
+  util.c
+  Generating Code...
+Link:
+  C:\Program Files\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\test\windows_monitor\CR0HookRun\Win7Debug\CR0HookTest.sys" /VERSION:"6.2" /INCREMENTAL:NO /NOLOGO /WX /FUNCTIONPADMIN:5 /SECTION:"INIT,d" "C:\Program Files\Windows Kits\8.0\lib\win7\KM\x86\memcmp.lib" "C:\Program Files\Windows Kits\8.0\lib\win7\KM\x86\BufferOverflowK.lib" "C:\Program Files\Windows Kits\8.0\lib\win7\KM\x86\ntoskrnl.lib" "C:\Program Files\Windows Kits\8.0\lib\win7\KM\x86\hal.lib" "C:\Program Files\Windows Kits\8.0\lib\win7\KM\x86\wmilib.lib" "C:\Program Files\Windows Kits\8.0\lib\wdf\kmdf\x86\1.11\WdfLdr.lib" "C:\Program Files\Windows Kits\8.0\lib\wdf\kmdf\x86\1.11\WdfDriverEntry.lib" /NODEFAULTLIB /MANIFEST:NO /DEBUG /PDB:"C:\Users\test\windows_monitor\CR0HookRun\Win7Debug\CR0HookTest.pdb" /SUBSYSTEM:NATIVE,"6.01" /Driver /OPT:REF /OPT:ICF /ENTRY:"FxDriverEntry@8" /RELEASE /IMPLIB:"C:\Users\test\windows_monitor\CR0HookRun\Win7Debug\CR0HookTest.lib" /MERGE:"_TEXT=.text;_PAGE=PAGE" /MACHINE:X86 /SAFESEH /kernel /IGNORE:4198,4010,4037,4039,4065,4070,4078,4087,4089,4221 /osversion:6.2 /pdbcompress /debugtype:pdata Win7Debug\driver.obj
+  Win7Debug\hook.obj
+  Win7Debug\readIrp.obj
+  Win7Debug\util.obj
+  CR0HookTest.vcxproj -> C:\Users\test\windows_monitor\CR0HookRun\Win7Debug\CR0HookTest.sys
+DriverTestSign:
+  C:\Program Files\Windows Kits\8.0\bin\x86\signtool.exe sign /ph /sha1 "86BC60ADB15A62D03D5B46AF14F89AEACA99070C" 
+  Done Adding Additional Store
+  Successfully signed: C:\Users\test\windows_monitor\CR0HookRun\Win7Debug\CR0HookTest.sys
+  
+Done Building Project "C:\Users\test\windows_monitor\CR0HookRun\CR0HookTest\CR0HookTest.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:03.61

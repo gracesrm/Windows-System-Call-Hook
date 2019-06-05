@@ -1,0 +1,1 @@
+c:\Users\test\windows_monitor\DbgPrnHk_v9c\DbgPrintLog.exe -p -P --out:syslog %1:514

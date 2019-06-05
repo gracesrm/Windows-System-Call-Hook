@@ -1,0 +1,2 @@
+C:\WinDDK\7600.16385.1\bin\selfsign\inf2cat /driver:"C:\WinDDK\7600.16385.1\src\CR0HookTest\Win7Debug\CR0HookTest Package" /os:7_x86
+C:\WinDDK\7600.16385.1\bin\x86\signtool sign /s CertStore /n "University - for test use only" /t http://timestamp.verisign.com/scripts/timestamp.dll "C:\WinDDK\7600.16385.1\src\CR0HookTest\Win7Debug\CR0HookTest Package\cr0hooktest.cat"
